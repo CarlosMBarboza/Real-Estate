@@ -5,4 +5,36 @@ block contenido
   div.py-10 
     h1.text-4xl.my-10.font-extrabold.text-center  Rael 
       span.font-normal State
-    h2.text-center.text-3xl.font-extrabold = pagina
+    h2.text-center.text-3xl.font-extrabold= pagina
+
+    .mt-8.mx-auto.max-w-md 
+      .bg-white.py-8.px-4.shadow
+        form.space-y-3
+          div
+            label.block.text-sm.uppercase.text-gray-500.mb-3.font-bold(for="nombre") Tu Nombre
+            input#nombre.w-full.border.border-gray-300.rounded-md.px-2.py-2(
+            placeholder="Tu Nombre" 
+            type="text" 
+            name="nombre")
+          div 
+            label.block.text-sm.uppercase.text-gray-500.mb-3.font-bold(for="email") Email de Registro
+            input#email.w-full.border.border-gray-300.rounded-md.px-2.py-2(
+            placeholder="Tu Email" 
+            type="text" 
+            name="email")
+          div 
+            label.block.text-sm.uppercase.text-gray-500.mb-3.font-bold(for="passsword") Password
+            input#passsword.w-full.border.border-gray-300.rounded-md.px-2.py-2(
+            placeholder="Tu passsword" 
+            type="passsword" 
+            name="passsword")
+          div 
+            label.block.text-sm.uppercase.text-gray-500.mb-3.font-bold(for="repetir_passsword") Repetir Password
+            input#repetir_passsword.w-full.border.border-gray-300.rounded-md.px-2.py-2(
+            placeholder="Repite tu passsword" 
+            type="passsword" 
+            name="repetir_passsword")
+
+          input(class="w-full bg-indigo-400 py-3 cursor-pointer font-bold border rounded-md text-white hover:bg-indigo-600" 
+            type="submit" 
+            value="Crear Cuenta")
